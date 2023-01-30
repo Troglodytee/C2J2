@@ -17,6 +17,12 @@
     --text-shadow-size: 0.5px;
     --text-shadow-blur: 2px;
 
+    --font-size-xs: 12px;
+    --font-size-sm: 16px;
+    --font-size-md: 20px;
+    --font-size-lg: 28px;
+    --font-size-xl: 36px;
+
     --margin-xs: calc(var(--margin-size) * var(--mul-xs));
     --margin-sm: calc(var(--margin-size) * var(--mul-sm));
     --margin-md: calc(var(--margin-size) * var(--mul-md));

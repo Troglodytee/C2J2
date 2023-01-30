@@ -1,8 +1,8 @@
-.fs-xs {font-size: x-small;}
-.fs-sm {font-size: small;}
-.fs-md {font-size: medium;}
-.fs-lg {font-size: large;}
-.fs-xl {font-size: x-large;}
+.fs-xs {font-size: var(--font-size-xs);}
+.fs-sm {font-size: var(--font-size-sm);}
+.fs-md {font-size: var(--font-size-md);}
+.fs-lg {font-size: var(--font-size-lg);}
+.fs-xl {font-size: var(--font-size-xl);}
 
 .spacing-rxl    {letter-spacing: calc(-1 * var(--letter-spacing-xl));}
 .spacing-rlg    {letter-spacing: calc(-1 * var(--letter-spacing-lg));}

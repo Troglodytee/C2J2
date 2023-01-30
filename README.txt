@@ -13,6 +13,7 @@ Release note :
 • 1.1.0 (30/01/2023)
 	- Adding tree componant
 	- Updating animations
+	- Updating font sizes
 • 1.0.1 (30/01/2023)
 	- Patch Javascript
 • 1.0.0 (30/01/2023)
