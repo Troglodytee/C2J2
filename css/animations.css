@@ -1,0 +1,71 @@
+.anim-slow          {animation-duration: 2s;}
+.anim-normal-speed  {animation-duration: 1s;}
+.anim-fast          {animation-duration: 0.5s;}
+.anim-instant       {animation-duration: 0s;}
+
+.anim-ease        {animation-timing-function: ease;}
+.anim-ease-in     {animation-timing-function: ease-in;}
+.anim-ease-out    {animation-timing-function: ease-out;}
+.anim-ease-in-out {animation-timing-function: ease-in-out;}
+.anim-linear      {animation-timing-function: linear;}
+
+/* animation-delay */
+
+.anim-repeat-2 {animation-iteration-count: 2;}
+.anim-infinite {animation-iteration-count: infinite;}
+
+.anim-normal     {animation-direction: normal;}
+.anim-reverse    {animation-direction: reverse;}
+.anim-alternate  {animation-direction: alternate;}
+.anim-ralternate {animation-direction: alternate-reverse;}
+
+.anim-stay {animation-fill-mode: forwards;}
+
+.anim-play  {animation-play-state: running;}
+.anim-pause {animation-play-state: paused;}
+
+.anim-filling-x    {animation-name: filling-x;}
+.anim-emptying-x   {animation-name: emptying-x;}
+.anim-filling-y    {animation-name: filling-y;}
+.anim-emptying-y   {animation-name: emptying-y;}
+.anim-fade-in      {animation-name: fade-in;}
+.anim-fade-out     {animation-name: fade-out;}
+.anim-rotation-360 {animation-name: rotation-360;}
+.anim-bounce       {animation-name: bounce;}
+
+@keyframes fill-x {
+    from {width: 0;}
+    to   {width: 100%;}
+}
+
+@keyframes fill-y {
+    from {height: 0;}
+    to   {height: 100%;}
+}
+
+@keyframes fill {
+    from {
+        width:  0;
+        height: 0;
+    }
+    to {
+        width:  100%;
+        height: 100%;
+    }
+}
+
+@keyframes fade {
+    from {opacity: 1;}
+    to   {opacity: 0;}
+}
+
+@keyframes rotation-360 {
+    from {transform: rotate(0);}
+    to   {transform: rotate(360deg);}
+}
+
+@keyframes bounce {
+    0%   {transform: scale(1, 1);}
+    50%  {transform: scale(1.2, 1.2);}
+    100% {transform: scale(1, 1);}
+}

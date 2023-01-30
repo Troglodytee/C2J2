@@ -1,0 +1,105 @@
+:root {
+    --mul-xs: 1;
+    --mul-sm: 2;
+    --mul-md: 3;
+    --mul-lg: 4;
+    --mul-xl: 5;
+    --margin-size: 10px;
+    --border-size: 1px;
+    --border-radius-size: 2px;
+    --padding-size: 5px;
+    --outline-size: 1px;
+    --outline-offset: 1px;
+    --box-shadow-size: 2px;
+    --box-shadow-blur: 5px;
+    --gap-size: 5px;
+    --letter-spacing-size: 5px;
+    --text-shadow-size: 0.5px;
+    --text-shadow-blur: 2px;
+
+    --margin-xs: calc(var(--margin-size) * var(--mul-xs));
+    --margin-sm: calc(var(--margin-size) * var(--mul-sm));
+    --margin-md: calc(var(--margin-size) * var(--mul-md));
+    --margin-lg: calc(var(--margin-size) * var(--mul-lg));
+    --margin-xl: calc(var(--margin-size) * var(--mul-xl));
+    
+    --border-xs: calc(var(--border-size) * var(--mul-xs));
+    --border-sm: calc(var(--border-size) * var(--mul-sm));
+    --border-md: calc(var(--border-size) * var(--mul-md));
+    --border-lg: calc(var(--border-size) * var(--mul-lg));
+    --border-xl: calc(var(--border-size) * var(--mul-xl));
+    
+    --border-radius-xs: calc(var(--border-radius-size) * var(--mul-xs));
+    --border-radius-sm: calc(var(--border-radius-size) * var(--mul-sm));
+    --border-radius-md: calc(var(--border-radius-size) * var(--mul-md));
+    --border-radius-lg: calc(var(--border-radius-size) * var(--mul-lg));
+    --border-radius-xl: calc(var(--border-radius-size) * var(--mul-xl));
+    
+    --padding-xs: calc(var(--padding-size) * var(--mul-xs));
+    --padding-sm: calc(var(--padding-size) * var(--mul-sm));
+    --padding-md: calc(var(--padding-size) * var(--mul-md));
+    --padding-lg: calc(var(--padding-size) * var(--mul-lg));
+    --padding-xl: calc(var(--padding-size) * var(--mul-xl));
+    
+    --outline-xs: calc(var(--outline-size) * var(--mul-xs));
+    --outline-sm: calc(var(--outline-size) * var(--mul-sm));
+    --outline-md: calc(var(--outline-size) * var(--mul-md));
+    --outline-lg: calc(var(--outline-size) * var(--mul-lg));
+    --outline-xl: calc(var(--outline-size) * var(--mul-xl));
+    
+    --outline-offset-xs: calc(var(--outline-offset) * var(--mul-xs));
+    --outline-offset-sm: calc(var(--outline-offset) * var(--mul-sm));
+    --outline-offset-md: calc(var(--outline-offset) * var(--mul-md));
+    --outline-offset-lg: calc(var(--outline-offset) * var(--mul-lg));
+    --outline-offset-xl: calc(var(--outline-offset) * var(--mul-xl));
+
+    --box-shadow-xs: calc(var(--box-shadow-size) * var(--mul-xs));
+    --box-shadow-sm: calc(var(--box-shadow-size) * var(--mul-sm));
+    --box-shadow-md: calc(var(--box-shadow-size) * var(--mul-md));
+    --box-shadow-lg: calc(var(--box-shadow-size) * var(--mul-lg));
+    --box-shadow-xl: calc(var(--box-shadow-size) * var(--mul-xl));
+    
+    --gap-xs: calc(var(--gap-size) * var(--mul-xs));
+    --gap-sm: calc(var(--gap-size) * var(--mul-sm));
+    --gap-md: calc(var(--gap-size) * var(--mul-md));
+    --gap-lg: calc(var(--gap-size) * var(--mul-lg));
+    --gap-xl: calc(var(--gap-size) * var(--mul-xl));
+    
+    --letter-spacing-xs: calc(var(--letter-spacing-size) * var(--mul-xs));
+    --letter-spacing-sm: calc(var(--letter-spacing-size) * var(--mul-sm));
+    --letter-spacing-md: calc(var(--letter-spacing-size) * var(--mul-md));
+    --letter-spacing-lg: calc(var(--letter-spacing-size) * var(--mul-lg));
+    --letter-spacing-xl: calc(var(--letter-spacing-size) * var(--mul-xl));
+
+    --text-shadow-xs: calc(var(--text-shadow-size) * var(--mul-xs));
+    --text-shadow-sm: calc(var(--text-shadow-size) * var(--mul-sm));
+    --text-shadow-md: calc(var(--text-shadow-size) * var(--mul-md));
+    --text-shadow-lg: calc(var(--text-shadow-size) * var(--mul-lg));
+    --text-shadow-xl: calc(var(--text-shadow-size) * var(--mul-xl));
+
+    --black:   #000000;
+    --blue:    #0000ff;
+    --brown:   #7f0000;
+    --cyan:    #00ffff;
+    --green:   #00ff00;
+    --grey:    #7f7f7f;
+    --magenta: #ff00ff;
+    --orange:  #ff7f00;
+    --pink:    #ff007f;
+    --purple:  #7f007f;
+    --red:     #ff0000;
+    --salmon:  #ff7f7f;
+    --slate:   #7f7fff;
+    --white:   #ffffff;
+    --yellow:  #ffff00;
+
+    --dark-blue:  #00007f;
+    --dark-cyan:  #007f7f;
+    --dark-green: #007f00;
+    --dark-grey:  #404040;
+
+    --light-blue:   #007fff;
+    --light-green:  #00ff7f;
+    --light-grey:   #bfbfbf;
+    --light-purple: #7f00ff;
+}

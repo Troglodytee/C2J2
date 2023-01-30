@@ -1,0 +1,47 @@
+.opacity-0   {opacity: 0;}
+.opacity-25  {opacity: 0.25;}
+.opacity-50  {opacity: 0.5;}
+.opacity-75  {opacity: 0.75;}
+.opacity-100 {opacity: 1;}
+
+.contrast-0   {filter: contrast(0);}
+.contrast-25  {filter: contrast(0.25);}
+.contrast-50  {filter: contrast(0.5);}
+.contrast-75  {filter: contrast(0.75);}
+.contrast-125 {filter: contrast(1.25);}
+.contrast-150 {filter: contrast(1.5);}
+.contrast-175 {filter: contrast(1.75);}
+.contrast-200 {filter: contrast(2);}
+
+.blur-xs {filter: blur(1px);}
+.blur-sm {filter: blur(2px);}
+.blur-md {filter: blur(5px);}
+.blur-lg {filter: blur(10px);}
+.blur-xl {filter: blur(20px);}
+
+.grayscale-25  {filter: grayscale(0.25);}
+.grayscale-50  {filter: grayscale(0.5);}
+.grayscale-75  {filter: grayscale(0.75);}
+.grayscale-100 {filter: grayscale(1);}
+
+.invert {filter: invert(1);}
+
+.isolation-auto {isolation: auto;}
+.isolate        {isolation: isolate;}
+
+.mix-normal      {mix-blend-mode: normal;}
+.mix-multiply    {mix-blend-mode: multiply;}
+.mix-screen      {mix-blend-mode: screen;}
+.mix-overlay     {mix-blend-mode: overlay;}
+.mix-darken      {mix-blend-mode: darken;}
+.mix-lighten     {mix-blend-mode: lighten;}
+.mix-color-dodge {mix-blend-mode: color-dodge;}
+.mix-color-burn  {mix-blend-mode: color-burn;}
+.mix-hard-light  {mix-blend-mode: hard-light;}
+.mix-soft-light  {mix-blend-mode: soft-light;}
+.mix-difference  {mix-blend-mode: difference;}
+.mix-exclusion   {mix-blend-mode: exclusion;}
+.mix-hue         {mix-blend-mode: hue;}
+.mix-saturation  {mix-blend-mode: saturation;}
+.mix-color       {mix-blend-mode: color;}
+.mix-luminosity  {mix-blend-mode: luminosity;}

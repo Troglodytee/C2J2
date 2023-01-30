@@ -1,0 +1,52 @@
+.float-none  {float: none;}
+.float-left  {float: left;}
+.float-right {float: right;}
+
+.clear-none  {clear: none;}
+.clear-left  {clear: left;}
+.clear-right {clear: right;}
+.clear-both  {clear: both;}
+
+@media screen and (min-width: 576px) {
+    .float-sm-none  {float: none;}
+    .float-sm-left  {float: left;}
+    .float-sm-right {float: right;}
+    
+    .clear-sm-none  {clear: none;}
+    .clear-sm-left  {clear: left;}
+    .clear-sm-right {clear: right;}
+    .clear-sm-both  {clear: both;}
+}
+
+@media screen and (min-width: 768px) {
+    .float-md-none  {float: none;}
+    .float-md-left  {float: left;}
+    .float-md-right {float: right;}
+    
+    .clear-md-none  {clear: none;}
+    .clear-md-left  {clear: left;}
+    .clear-md-right {clear: right;}
+    .clear-md-both  {clear: both;}
+}
+
+@media screen and (min-width: 992px) {
+    .float-lg-none  {float: none;}
+    .float-lg-left  {float: left;}
+    .float-lg-right {float: right;}
+    
+    .clear-lg-none  {clear: none;}
+    .clear-lg-left  {clear: left;}
+    .clear-lg-right {clear: right;}
+    .clear-lg-both  {clear: both;}
+}
+
+@media screen and (min-width: 1200px) {
+    .float-xl-none  {float: none;}
+    .float-xl-left  {float: left;}
+    .float-xl-right {float: right;}
+    
+    .clear-xl-none  {clear: none;}
+    .clear-xl-left  {clear: left;}
+    .clear-xl-right {clear: right;}
+    .clear-xl-both  {clear: both;}
+}

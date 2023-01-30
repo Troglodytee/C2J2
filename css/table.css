@@ -1,0 +1,5 @@
+.caption-t {caption-side: top;}
+.caption-b {caption-side: bottom;}
+
+.show-empty-cells {empty-cells: show;}
+.hide-empty-cells {empty-cells: hide;}

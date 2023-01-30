@@ -1,0 +1,66 @@
+.fs-xs {font-size: x-small;}
+.fs-sm {font-size: small;}
+.fs-md {font-size: medium;}
+.fs-lg {font-size: large;}
+.fs-xl {font-size: x-large;}
+
+.spacing-rxl    {letter-spacing: calc(-1 * var(--letter-spacing-xl));}
+.spacing-rlg    {letter-spacing: calc(-1 * var(--letter-spacing-lg));}
+.spacing-rmd    {letter-spacing: calc(-1 * var(--letter-spacing-md));}
+.spacing-rsm    {letter-spacing: calc(-1 * var(--letter-spacing-sm));}
+.spacing-rxs    {letter-spacing: calc(-1 * var(--letter-spacing-xs));}
+.spacing-normal {letter-spacing: 0px;}
+.spacing-xs     {letter-spacing: var(--letter-spacing-xs);}
+.spacing-sm     {letter-spacing: var(--letter-spacing-sm);}
+.spacing-md     {letter-spacing: var(--letter-spacing-md);}
+.spacing-lg     {letter-spacing: var(--letter-spacing-lg);}
+.spacing-xl     {letter-spacing: var(--letter-spacing-xl);}
+
+.light  {font-weight: lighter;}
+.bold   {font-weight: bold;}
+.x-bold {font-weight: bolder;}
+
+.italic {font-style: italic;}
+
+.txt-deco-none        {text-decoration-line: none;}
+.txt-deco-underline   {text-decoration-line: underline;}
+.txt-deco-overline    {text-decoration-line: overline;}
+.txt-deco-throughline {text-decoration-line: line-through;}
+
+.txt-deco-solid  {text-decoration-style: solid;}
+.txt-deco-double {text-decoration-style: double;}
+.txt-deco-dotted {text-decoration-style: dotted;}
+.txt-deco-dashed {text-decoration-style: dashed;}
+.txt-deco-wavy   {text-decoration-style: wavy;}
+
+.txt-transform-none {text-transform: none;}
+.txt-capitalize     {text-transform: capitalize;}
+.txt-uppercase      {text-transform: uppercase;}
+.txt-lowercase      {text-transform: lowercase;}
+.txt-full-width     {text-transform: full-width;}
+
+.txt-align-s {text-align: start;}
+.txt-align-c {text-align: center;}
+.txt-align-e {text-align: end;}
+.txt-align-j {text-align: justify;}
+
+.txt-indent {text-indent: 25%;}
+
+.txt-overflow-clip     {text-overflow: clip;}
+.txt-overflow-ellipsis {text-overflow: ellipsis;}
+
+.txt-shadow-xs {text-shadow: var(--text-shadow-xs) var(--text-shadow-xs) var(--text-shadow-blur) var(--black);}
+.txt-shadow-sm {text-shadow: var(--text-shadow-sm) var(--text-shadow-sm) var(--text-shadow-blur) var(--black);}
+.txt-shadow-md {text-shadow: var(--text-shadow-md) var(--text-shadow-md) var(--text-shadow-blur) var(--black);}
+.txt-shadow-lg {text-shadow: var(--text-shadow-lg) var(--text-shadow-lg) var(--text-shadow-blur) var(--black);}
+.txt-shadow-xl {text-shadow: var(--text-shadow-xl) var(--text-shadow-xl) var(--text-shadow-blur) var(--black);}
+
+.txt-htb {writing-mode: horizontal-tb;}
+.txt-vlr {writing-mode: vertical-lr;}
+.txt-vrl {writing-mode: vertical-rl;}
+
+.txt-tab-xs {tab-size: 1;}
+.txt-tab-sm {tab-size: 2;}
+.txt-tab-md {tab-size: 3;}
+.txt-tab-lg {tab-size: 4;}
+.txt-tab-xl {tab-size: 5;}

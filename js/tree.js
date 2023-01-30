@@ -1,0 +1,21 @@
+export function init() {
+    for (let i of document.getElementsByClassName("tree")) {
+        let content = i.getElementsByClassName("tree-content")[0];
+        if (content) {
+            let title = i.getElementsByClassName("tree-title")[0];
+            if (title) {
+                content.dataset.open = "true";
+                title.addEventListener("click", () => {
+                    if (content.dataset.open == "false") {
+                        content.dataset.open = "true";
+                        content.style.display = "";
+                    }
+                    else {
+                        content.dataset.open = "false";
+                        content.style.display = "none";
+                    }
+                })
+            }
+        }
+    }
+}

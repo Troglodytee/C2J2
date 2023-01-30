@@ -1,0 +1,4 @@
+.resizable-none {resize: none;}
+.resizable-x    {resize: horizontal;}
+.resizable-y    {resize: vertical;}
+.resizable      {resize: both;}

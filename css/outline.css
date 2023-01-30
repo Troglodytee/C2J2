@@ -1,0 +1,22 @@
+.outl-xs {outline-width: var(--outline-xs);}
+.outl-sm {outline-width: var(--outline-sm);}
+.outl-md {outline-width: var(--outline-md);}
+.outl-lg {outline-width: var(--outline-lg);}
+.outl-xl {outline-width: var(--outline-xl);}
+
+.outl-offset-xs {outline-offset: var(--outline-offset-xs);}
+.outl-offset-sm {outline-offset: var(--outline-offset-sm);}
+.outl-offset-md {outline-offset: var(--outline-offset-md);}
+.outl-offset-lg {outline-offset: var(--outline-offset-lg);}
+.outl-offset-xl {outline-offset: var(--outline-offset-xl);}
+
+.outl-auto   {border-style: auto;}
+.outl-none   {border-style: none;}
+.outl-dotted {border-style: dotted;}
+.outl-dashed {border-style: dashed;}
+.outl-solid  {border-style: solid;}
+.outl-double {border-style: double;}
+.outl-groove {border-style: groove;}
+.outl-ridge  {border-style: ridge;}
+.outl-inset  {border-style: inset;}
+.outl-outset {border-style: outset;}
