@@ -19,9 +19,9 @@
 
     --font-size-xs: 12px;
     --font-size-sm: 16px;
-    --font-size-md: 20px;
-    --font-size-lg: 28px;
-    --font-size-xl: 36px;
+    --font-size-md: 24px;
+    --font-size-lg: 32px;
+    --font-size-xl: 52px;
 
     --margin-xs: calc(var(--margin-size) * var(--mul-xs));
     --margin-sm: calc(var(--margin-size) * var(--mul-sm));

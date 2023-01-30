@@ -39,10 +39,10 @@
 .txt-lowercase      {text-transform: lowercase;}
 .txt-full-width     {text-transform: full-width;}
 
-.txt-align-s {text-align: start;}
-.txt-align-c {text-align: center;}
-.txt-align-e {text-align: end;}
-.txt-align-j {text-align: justify;}
+.txt-algn-s {text-align: start;}
+.txt-algn-c {text-align: center;}
+.txt-algn-e {text-align: end;}
+.txt-algn-j {text-align: justify;}
 
 .txt-indent {text-indent: 25%;}
 

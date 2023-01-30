@@ -10,6 +10,11 @@ Include :
 	<script type="module" src="your/project/path/c2j2/js/include.js"></script>
 
 Release note :
+• 1.2.0 (30/01/2023)
+	- Responsive widths and heights
+	- Updating font sizes
+	- Adding margin, padding and border horizontal and vertical
+	- Adding border radius top, bottom, left and right
 • 1.1.0 (30/01/2023)
 	- Adding tree componant
 	- Updating animations
