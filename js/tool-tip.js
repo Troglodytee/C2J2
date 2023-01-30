@@ -10,14 +10,14 @@ export function init() {
                     i.style.display = "";
                     let target_rect = target_element.getBoundingClientRect();
                     let tip_rect = i.getBoundingClientRect();
-                    let x = target_rect.x+target_rect.width+window.scrollX;
+                    let x = target_rect.left+target_rect.width;
                     if (x < 0) {x = 0;}
                     else if (x+tip_rect.width > window.innerWidth) {x = window.innerWidth-tip_rect.width;}
-                    let y = target_rect.y-tip_rect.height+window.scrollY;
+                    let y = target_rect.top-tip_rect.height;
                     if (y < 0) {y = 0;}
                     else if (y+tip_rect.height > window.innerHeight) {y = window.innerHeight-tip_rect.height;}
-                    i.style.top = y+"px";
-                    i.style.left = x+"px";
+                    i.style.top = y+window.scrollY+"px";
+                    i.style.left = x+window.scrollX+"px";
                 })
                 target_element.addEventListener("mouseleave", () => {i.style.display = "none";})
             }

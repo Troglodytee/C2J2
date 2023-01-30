@@ -21,6 +21,7 @@
 .bd-light-green  {border-color: var(--light-green);}
 .bd-light-grey   {border-color: var(--light-grey);}
 .bd-light-purple {border-color: var(--light-purple);}
+.bd-light-yellow {border-color: var(--light-yellow);}
 
 .outl-black   {outline-color: var(--black);}
 .outl-blue    {outline-color: var(--blue);}
@@ -45,6 +46,7 @@
 .outl-light-green  {outline-color: var(--light-green);}
 .outl-light-grey   {outline-color: var(--light-grey);}
 .outl-light-purple {outline-color: var(--light-purple);}
+.outl-light-yellow {outline-color: var(--light-yellow);}
 
 .bg-black   {background-color: var(--black);}
 .bg-blue    {background-color: var(--blue);}
@@ -69,6 +71,7 @@
 .bg-light-green  {background-color: var(--light-green);}
 .bg-light-grey   {background-color: var(--light-grey);}
 .bg-light-purple {background-color: var(--light-purple);}
+.bg-light-yellow {background-color: var(--light-yellow);}
 
 .txt-black   {color: var(--black);}
 .txt-blue    {color: var(--blue);}
@@ -93,6 +96,7 @@
 .txt-light-green  {color: var(--light-green);}
 .txt-light-grey   {color: var(--light-grey);}
 .txt-light-purple {color: var(--light-purple);}
+.txt-light-yellow {color: var(--light-yellow);}
 
 .txt-deco-black   {text-decoration-color: var(--black);}
 .txt-deco-blue    {text-decoration-color: var(--blue);}
@@ -117,6 +121,7 @@
 .txt-deco-light-green  {text-decoration-color: var(--light-green);}
 .txt-deco-light-grey   {text-decoration-color: var(--light-grey);}
 .txt-deco-light-purple {text-decoration-color: var(--light-purple);}
+.txt-deco-light-yellow {text-decoration-color: var(--light-yellow);}
 
 .txt-cursor-black   {caret-color: var(--black);}
 .txt-cursor-blue    {caret-color: var(--blue);}
@@ -141,3 +146,4 @@
 .txt-cursor-light-green  {caret-color: var(--light-green);}
 .txt-cursor-light-grey   {caret-color: var(--light-grey);}
 .txt-cursor-light-purple {caret-color: var(--light-purple);}
+.txt-cursor-light-yellow {caret-color: var(--light-yellow);}
