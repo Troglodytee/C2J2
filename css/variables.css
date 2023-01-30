@@ -14,6 +14,7 @@
     --box-shadow-blur: 5px;
     --gap-size: 5px;
     --letter-spacing-size: 5px;
+    --word-spacing-size: 5px;
     --text-shadow-size: 0.5px;
     --text-shadow-blur: 2px;
 
@@ -76,6 +77,12 @@
     --letter-spacing-md: calc(var(--letter-spacing-size) * var(--mul-md));
     --letter-spacing-lg: calc(var(--letter-spacing-size) * var(--mul-lg));
     --letter-spacing-xl: calc(var(--letter-spacing-size) * var(--mul-xl));
+    
+    --word-spacing-xs: calc(var(--word-spacing-size) * var(--mul-xs));
+    --word-spacing-sm: calc(var(--word-spacing-size) * var(--mul-sm));
+    --word-spacing-md: calc(var(--word-spacing-size) * var(--mul-md));
+    --word-spacing-lg: calc(var(--word-spacing-size) * var(--mul-lg));
+    --word-spacing-xl: calc(var(--word-spacing-size) * var(--mul-xl));
 
     --text-shadow-xs: calc(var(--text-shadow-size) * var(--mul-xs));
     --text-shadow-sm: calc(var(--text-shadow-size) * var(--mul-sm));

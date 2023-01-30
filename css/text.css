@@ -16,6 +16,13 @@
 .spacing-lg     {letter-spacing: var(--letter-spacing-lg);}
 .spacing-xl     {letter-spacing: var(--letter-spacing-xl);}
 
+.w-spacing-normal {word-spacing: 0px;}
+.w-spacing-xs     {word-spacing: var(--word-spacing-xs);}
+.w-spacing-sm     {word-spacing: var(--word-spacing-sm);}
+.w-spacing-md     {word-spacing: var(--word-spacing-md);}
+.w-spacing-lg     {word-spacing: var(--word-spacing-lg);}
+.w-spacing-xl     {word-spacing: var(--word-spacing-xl);}
+
 .light  {font-weight: lighter;}
 .bold   {font-weight: bold;}
 .x-bold {font-weight: bolder;}
@@ -64,3 +71,15 @@
 .txt-tab-md {tab-size: 3;}
 .txt-tab-lg {tab-size: 4;}
 .txt-tab-xl {tab-size: 5;}
+
+.txt-w-space-normal  {white-space: normal;}
+.txt-w-space-nowrap  {white-space: nowrap;}
+.txt-w-space-pre     {white-space: pre;}
+.txt-w-space-prewrap {white-space: pre-wrap;}
+.txt-w-space-preline {white-space: pre-line;}
+.txt-w-space-bspaces {white-space: break-spaces;}
+
+.txt-w-break-normal   {word-break: normal;}
+.txt-w-break-breakall {word-break: break-all;}
+.txt-w-break-keepall  {word-break: keep-all;}
+.txt-w-break-bword    {word-break: break-word;}

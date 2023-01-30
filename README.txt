@@ -1,6 +1,6 @@
 ========== CSS Compagnon & Judicious Javascript (C2J2) ==========
 Author  : Thomas Baricault
-Version : 1.1.0
+Version : 1.3.0
 =================================================================
 
 Include :
@@ -10,6 +10,12 @@ Include :
 	<script type="module" src="your/project/path/c2j2/js/include.js"></script>
 
 Release note :
+• 1.3.0 (30/01/2023)
+	- Adding margin auto
+	- Adding white space property
+	- Adding word break property
+	- Adding word spacing property
+	- Adding responsive min and max widths and heights properties
 • 1.2.0 (30/01/2023)
 	- Responsive widths and heights
 	- Updating font sizes
