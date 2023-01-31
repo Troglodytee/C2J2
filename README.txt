@@ -1,6 +1,6 @@
-========== CSS Compagnon & Judicious Javascript (C2J2) ==========
+========== CSS Companion & Judicious Javascript (C2J2) ==========
 Author  : Thomas Baricault
-Version : 1.3.1
+Version : 1.4.1
 =================================================================
 
 Include :
@@ -10,6 +10,8 @@ Include :
 	<script type="module" src="your/project/path/c2j2/js/include.js"></script>
 
 Release note :
+• 1.4.1 (31/01/2023)
+	- Adding margin, border and padding none
 • 1.3.1 (30/01/2023)
 	- Patching Tool Tip component
 	- Adding colors
