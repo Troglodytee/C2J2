@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Consolas";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../font/Consolas-Regular.ttf");
+}
+
+.code * {font-family: "Consolas";}

@@ -1,0 +1,1 @@
+export const C2J2_PATH = "assets/c2j2";
