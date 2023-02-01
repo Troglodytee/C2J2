@@ -46,16 +46,16 @@ export function compute(element) {
                 trigger.addEventListener("click", () => {
                     if (content.dataset.open == "false") {dropMenuOpen(trigger, content, side, anchor);}
                     else {dropMenuClose(content);}
-                })
+                });
             }
             else if (mode == "hover") {
                 trigger.addEventListener("mouseenter", () => {dropMenuOpen(trigger, content, side, anchor);});
                 trigger.addEventListener("mouseleave", (event) => {
                     if (!isInRect(content.getBoundingClientRect(), event.clientX, event.clientY)) {dropMenuClose(content);}
-                })
+                });
                 content.addEventListener("mouseleave", (event) => {
                     if (!isInRect(trigger.getBoundingClientRect(), event.clientX, event.clientY)) {dropMenuClose(content);}
-                })
+                });
             }
         }
     }
@@ -72,5 +72,5 @@ export function init(element) {
                 if (content && !isInRect(content.getBoundingClientRect(), x, y)) {dropMenuClose(content);}
             }
         }
-    })
+    });
 }

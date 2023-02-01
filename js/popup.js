@@ -11,7 +11,7 @@ export function init(element) {
                 let animation = popup.dataset.anim;
                 for (let j of popup.className.split(" ")) {if (j.slice(0, 4) == "anim") {popup.classList.remove(j);}}
                 if (animation) {for (let j of animation.split(" ")) {popup.classList.add("anim-"+j);}}
-            })
+            });
         }
     }
     for (let i of element.getElementsByClassName("popup-close")) {
@@ -21,7 +21,7 @@ export function init(element) {
             i.addEventListener("click", () => {
                 popup.style.display = "none";
                 for (let j of popup.className.split(" ")) {if (j.slice(0, 4) == "anim") {popup.classList.remove(j);}}
-            })
+            });
         }
     }
 }

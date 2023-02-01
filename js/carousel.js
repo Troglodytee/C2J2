@@ -19,7 +19,7 @@ export function compute(element) {
                 content.prepend(element_in);
                 items[view].style.display = "none";
             }
-        })}
+        });}
         let next_button = element.getElementsByClassName("carousel-next")[0];
         if (next_button) {next_button.addEventListener("click", () => {
             for (let i = 0; i < jump; i++) {
@@ -30,7 +30,7 @@ export function compute(element) {
                 element.style.display = "none";
                 content.append(element);
             }
-        })}
+        });}
     }
 }
 

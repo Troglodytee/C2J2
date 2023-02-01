@@ -1,6 +1,6 @@
 ========== CSS Companion & Judicious Javascript (C2J2) ==========
 Author  : Thomas Baricault
-Version : 1.6.0
+Version : 1.7.0
 =================================================================
 
 Include :
@@ -10,6 +10,9 @@ Include :
 	<script type="module" src="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.5.0/js/include.js"></script>
 
 Release note :
+• 1.7.0 (01/02/2023)
+	- Start adding component graph
+	- Upgrading Javascript
 • 1.6.0 (01/02/2023)
 	- Adding repeat component
 • 1.5.0 (31/01/2023)

@@ -13,7 +13,7 @@ export function compute(element) {
                     content.dataset.open = "false";
                     content.style.display = "none";
                 }
-            })
+            });
         }
     }
 }
