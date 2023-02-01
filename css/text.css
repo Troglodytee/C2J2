@@ -4,11 +4,11 @@
 .fs-lg {font-size: var(--font-size-lg);}
 .fs-xl {font-size: var(--font-size-xl);}
 
-.spacing-rxl    {letter-spacing: calc(-1 * var(--letter-spacing-xl));}
-.spacing-rlg    {letter-spacing: calc(-1 * var(--letter-spacing-lg));}
-.spacing-rmd    {letter-spacing: calc(-1 * var(--letter-spacing-md));}
-.spacing-rsm    {letter-spacing: calc(-1 * var(--letter-spacing-sm));}
-.spacing-rxs    {letter-spacing: calc(-1 * var(--letter-spacing-xs));}
+.spacing-r-xl   {letter-spacing: calc(-1 * var(--letter-spacing-xl));}
+.spacing-r-lg   {letter-spacing: calc(-1 * var(--letter-spacing-lg));}
+.spacing-r-md   {letter-spacing: calc(-1 * var(--letter-spacing-md));}
+.spacing-r-sm   {letter-spacing: calc(-1 * var(--letter-spacing-sm));}
+.spacing-r-xs   {letter-spacing: calc(-1 * var(--letter-spacing-xs));}
 .spacing-normal {letter-spacing: 0px;}
 .spacing-xs     {letter-spacing: var(--letter-spacing-xs);}
 .spacing-sm     {letter-spacing: var(--letter-spacing-sm);}

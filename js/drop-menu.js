@@ -28,43 +28,45 @@ function dropMenuClose(content) {
     content.style.display = "none";
 }
 
-export function init() {
-    for (let i of document.getElementsByClassName("drop-menu")) {
-        let content = i.getElementsByClassName("drop-menu-content")[0];
-        if (content) {
-            content.style.display = "none";
-            content.style.position = "absolute";
-            content.dataset.open = "false";
-            let trigger = i.getElementsByClassName("drop-menu-trigger")[0];
-            if (trigger) {
-                let side = "bottom";
-                if (i.dataset.side) {side = i.dataset.side;}
-                let anchor = "start";
-                if (i.dataset.anchor) {anchor = i.dataset.anchor;}
-                let mode = "click";
-                if (i.dataset.mode) {mode = i.dataset.mode;}
-                if (mode == "click") {
-                    trigger.addEventListener("click", () => {
-                        if (content.dataset.open == "false") {dropMenuOpen(trigger, content, side, anchor);}
-                        else {dropMenuClose(content);}
-                    })
-                }
-                else if (mode == "hover") {
-                    trigger.addEventListener("mouseenter", () => {dropMenuOpen(trigger, content, side, anchor);});
-                    trigger.addEventListener("mouseleave", (event) => {
-                        if (!isInRect(content.getBoundingClientRect(), event.clientX, event.clientY)) {dropMenuClose(content);}
-                    })
-                    content.addEventListener("mouseleave", (event) => {
-                        if (!isInRect(trigger.getBoundingClientRect(), event.clientX, event.clientY)) {dropMenuClose(content);}
-                    })
-                }
+export function compute(element) {
+    let content = element.getElementsByClassName("drop-menu-content")[0];
+    if (content) {
+        content.style.display = "none";
+        content.style.position = "absolute";
+        content.dataset.open = "false";
+        let trigger = element.getElementsByClassName("drop-menu-trigger")[0];
+        if (trigger) {
+            let side = "bottom";
+            if (element.dataset.side) {side = element.dataset.side;}
+            let anchor = "start";
+            if (element.dataset.anchor) {anchor = element.dataset.anchor;}
+            let mode = "click";
+            if (element.dataset.mode) {mode = element.dataset.mode;}
+            if (mode == "click") {
+                trigger.addEventListener("click", () => {
+                    if (content.dataset.open == "false") {dropMenuOpen(trigger, content, side, anchor);}
+                    else {dropMenuClose(content);}
+                })
+            }
+            else if (mode == "hover") {
+                trigger.addEventListener("mouseenter", () => {dropMenuOpen(trigger, content, side, anchor);});
+                trigger.addEventListener("mouseleave", (event) => {
+                    if (!isInRect(content.getBoundingClientRect(), event.clientX, event.clientY)) {dropMenuClose(content);}
+                })
+                content.addEventListener("mouseleave", (event) => {
+                    if (!isInRect(trigger.getBoundingClientRect(), event.clientX, event.clientY)) {dropMenuClose(content);}
+                })
             }
         }
     }
+}
+
+export function init(element) {
+    for (let i of element.getElementsByClassName("drop-menu")) {compute(i);}
     window.addEventListener("click", (event) => {
         let x = event.clientX;
         let y = event.clientY;
-        for (let i of document.getElementsByClassName("drop-menu")) {
+        for (let i of element.getElementsByClassName("drop-menu")) {
             if (!isInRect(i.getBoundingClientRect(), x, y)) {
                 let content = i.getElementsByClassName("drop-menu-content")[0];
                 if (content && !isInRect(content.getBoundingClientRect(), x, y)) {dropMenuClose(content);}

@@ -1,15 +1,17 @@
 ========== CSS Companion & Judicious Javascript (C2J2) ==========
 Author  : Thomas Baricault
-Version : 1.5.0
+Version : 1.6.0
 =================================================================
 
 Include :
 • CSS :
-	<link rel="stylesheet" href="your/project/path/c2j2/css/include.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.5.0/css/include.css">
 • JS :
-	<script type="module" src="your/project/path/c2j2/js/include.js"></script>
+	<script type="module" src="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.5.0/js/include.js"></script>
 
 Release note :
+• 1.6.0 (01/02/2023)
+	- Adding repeat component
 • 1.5.0 (31/01/2023)
 	- Adding a code component
 • 1.4.0 (31/01/2023)

@@ -1,38 +1,39 @@
-export function init() {
-    let carousels = document.getElementsByClassName("carousel");
-    for (let i of carousels) {
-        let carousel = i.getElementsByClassName("carousel-content")[0];
-        let content = carousel.children;
-        if (content) {
-            let view = 1;
-            if (i.dataset.view) {view = parseInt(i.dataset.view);}
-            if (view < 1) {view = 1;}
-            let jump = 1;
-            if (i.dataset.jump) {jump = parseInt(i.dataset.jump);}
-            if (jump < 1) {jump = 1;}
-            jump %= content.length;
-            for (let j = view; j < content.length; j++) {content[j].style.display = "none";}
-            let previous_button = i.getElementsByClassName("carousel-previous")[0];
-            if (previous_button) {previous_button.addEventListener("click", () => {
-                for (let j = 0; j < jump; j++) {
-                    let element_in = content[content.length-1].cloneNode(true);
-                    content[content.length-1].remove();
-                    element_in.style.display = "";
-                    carousel.prepend(element_in);
-                    content[view].style.display = "none";
-                }
-            })}
-            let next_button = i.getElementsByClassName("carousel-next")[0];
-            if (next_button) {next_button.addEventListener("click", () => {
-                for (let j = 0; j < jump; j++) {
-                    content[view].style.display = "";
-                    let element_out = content[0];
-                    let element = element_out.cloneNode(true);
-                    element_out.remove();
-                    element.style.display = "none";
-                    carousel.append(element);
-                }
-            })}
-        }
+export function compute(element) {
+    let content = element.getElementsByClassName("carousel-content")[0];
+    if (content) {
+        let items = content.children;
+        let view = 1;
+        if (element.dataset.view) {view = parseInt(element.dataset.view);}
+        if (view < 1) {view = 1;}
+        let jump = 1;
+        if (element.dataset.jump) {jump = parseInt(element.dataset.jump);}
+        if (jump < 1) {jump = 1;}
+        jump %= items.length;
+        for (let i = view; i < items.length; i++) {items[i].style.display = "none";}
+        let previous_button = element.getElementsByClassName("carousel-previous")[0];
+        if (previous_button) {previous_button.addEventListener("click", () => {
+            for (let i = 0; i < jump; i++) {
+                let element_in = items[items.length-1].cloneNode(true);
+                items[items.length-1].remove();
+                element_in.style.display = "";
+                content.prepend(element_in);
+                items[view].style.display = "none";
+            }
+        })}
+        let next_button = element.getElementsByClassName("carousel-next")[0];
+        if (next_button) {next_button.addEventListener("click", () => {
+            for (let i = 0; i < jump; i++) {
+                items[view].style.display = "";
+                let element_out = items[0];
+                let element = element_out.cloneNode(true);
+                element_out.remove();
+                element.style.display = "none";
+                content.append(element);
+            }
+        })}
     }
+}
+
+export function init(element) {
+    for (let i of element.getElementsByClassName("carousel")) {compute(i);}
 }

@@ -1,8 +1,8 @@
-export function init() {
-    for (let i of document.getElementsByClassName("popup")) {
+export function init(element) {
+    for (let i of element.getElementsByClassName("popup")) {
         i.style.display = "none";
     }
-    for (let i of document.getElementsByClassName("popup-trigger")) {
+    for (let i of element.getElementsByClassName("popup-trigger")) {
         let target = i.dataset.target;
         if (target) {
             let popup = document.getElementById(target);
@@ -14,7 +14,7 @@ export function init() {
             })
         }
     }
-    for (let i of document.getElementsByClassName("popup-close")) {
+    for (let i of element.getElementsByClassName("popup-close")) {
         let target = i.dataset.target;
         if (target) {
             let popup = document.getElementById(target);
