@@ -1,15 +1,18 @@
 ========== CSS Companion & Judicious Javascript (C2J2) ==========
 Author  : Thomas Baricault
-Version : 1.7.0
+Version : 1.8.0
 =================================================================
 
 Include :
 • CSS :
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.5.0/css/include.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.8.0/css/include.css">
 • JS :
-	<script type="module" src="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.5.0/js/include.js"></script>
+	<script type="module" src="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.8.0/js/include.js"></script>
 
 Release note :
+• 1.8.0 (01/02/2023)
+	- Adding component graph type bar
+	- Upgrading code component
 • 1.7.0 (01/02/2023)
 	- Start adding component graph
 	- Upgrading Javascript

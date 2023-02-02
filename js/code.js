@@ -27,9 +27,10 @@ function getSpan(color, value) {
 export function compute(element) {
     let html = "";
     let language = element.dataset.lang;
+    let code = element.textContent;
     if (language && LANGUAGES.includes(language)) {
-        if (!(element.dataset.hideHead == "true")) {
-            html += `<div class="bd-rad-t-md pd-md d-flex gap-sm algn-i-center bg-light-grey"><img src="${C2J2_PATH}/img/${ICONS[language][0]}.svg" alt="${ICONS[language][1]}" style="width: 40px">`;
+        if (!(element.dataset.hideHead === "true")) {
+            html += `<div class="bd-rad-t-md pd-md d-flex gap-sm algn-i-center bg-light-grey"><img src="${C2J2_PATH}/img/${ICONS[language][0]}.svg" alt="${ICONS[language][1]}" style="max-width: 40px; max-height: 40px;">`;
             if (element.dataset.name) {html += `<p class="fs-sm txt-black">${element.dataset.name}</p>`;}
             html += "</div>"
         }
@@ -37,7 +38,7 @@ export function compute(element) {
         if (language == "html") {
             let type = "out";
             let value = "";
-            for (let i of element.textContent) {
+            for (let i of code) {
                 switch (type) {
                     case "out":
                         if (i == "<") {
@@ -200,7 +201,13 @@ export function compute(element) {
             }
             let bd = "bd-rad-b-md";
             if (element.dataset.hideHead == "true") {bd = "bd-rad-md";}
-            html += `<div class="code-content ${bd} pd-md bg-dark-grey txt-w-break-breakall">`;
+            html += `<div class="${bd} pd-md bg-dark-grey txt-w-break-breakall">`;
+            if (element.id && element.dataset.allowCopy === "true") {
+                html += `
+                    <img id="${element.id}-copy" class="float-right mg-l-xs" src="${C2J2_PATH}/img/copy-to-clipboard.svg" alt="Copier" style="max-width: 40px; max-height: 40px;">
+                    <p class="tool-tip bd-rad-sm pd-sm txt-w-space-nowrap bg-light-yellow txt-black" data-target="${element.id}-copy">Copier le code</p>
+                `;
+            }
             if (list.length != 0) {
                 let value = "";
                 for (let i = 0; i < list.length; i++) {
@@ -227,6 +234,18 @@ export function compute(element) {
         }
     }
     element.innerHTML = html;
+    if (element.id && element.dataset.allowCopy === "true") {
+        let copy_button = document.getElementById(element.id+"-copy");
+        copy_button.addEventListener("click", () => {
+            navigator.clipboard.writeText(code);
+            copy_button.nextElementSibling.classList.remove("bg-light-yellow");
+            copy_button.nextElementSibling.classList.add("bg-light-green");
+        });
+        copy_button.addEventListener("mouseleave", () => {
+            copy_button.nextElementSibling.classList.remove("bg-light-green");
+            copy_button.nextElementSibling.classList.add("bg-light-yellow");
+        });
+    }
 }
 
 export function init(element) {
