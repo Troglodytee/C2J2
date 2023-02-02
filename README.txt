@@ -10,7 +10,7 @@ Include :
 	<script type="module" src="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.8.0/js/include.js"></script>
 
 Release note :
-• 1.8.0 (01/02/2023)
+• 1.8.0 (02/02/2023)
 	- Adding component graph type bar
 	- Upgrading code component
 • 1.7.0 (01/02/2023)
