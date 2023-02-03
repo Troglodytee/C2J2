@@ -41,6 +41,10 @@
 .overflow-wrap-break {overflow-wrap: break-word;}
 .overflow-wrap-anywhere {overflow-wrap: anywhere;}
 
+.extand   {max-width: 100vw; max-height: 100vh;}
+.extand-x {max-width: 100vw;}
+.extand-y {max-height: 100vh}
+
 .w-25  {width: 25%;}
 .w-50  {width: 50%;}
 .w-75  {width: 75%;}
