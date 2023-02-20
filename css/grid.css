@@ -39,11 +39,11 @@
 .row-gap-lg {row-gap: var(--gap-lg);}
 .row-gap-xl {row-gap: var(--gap-xl);}
 
-.column-gap-xs {column-gap: var(--gap-xs);}
-.column-gap-sm {column-gap: var(--gap-sm);}
-.column-gap-md {column-gap: var(--gap-md);}
-.column-gap-lg {column-gap: var(--gap-lg);}
-.column-gap-xl {column-gap: var(--gap-xl);}
+.col-gap-xs {column-gap: var(--gap-xs);}
+.col-gap-sm {column-gap: var(--gap-sm);}
+.col-gap-md {column-gap: var(--gap-md);}
+.col-gap-lg {column-gap: var(--gap-lg);}
+.col-gap-xl {column-gap: var(--gap-xl);}
 
 @media screen and (min-width: 576px) {
     .row-sm-1  {grid-row: span 1;}

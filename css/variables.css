@@ -1,94 +1,77 @@
 :root {
-    --mul-xs: 1;
-    --mul-sm: 2;
-    --mul-md: 3;
-    --mul-lg: 4;
-    --mul-xl: 5;
-    --margin-size: 10px;
-    --border-size: 1px;
-    --border-radius-size: 2px;
-    --padding-size: 5px;
-    --outline-size: 1px;
-    --outline-offset: 1px;
-    --box-shadow-size: 2px;
-    --box-shadow-blur: 5px;
-    --gap-size: 5px;
-    --letter-spacing-size: 5px;
-    --word-spacing-size: 5px;
-    --text-shadow-size: 0.5px;
-    --text-shadow-blur: 2px;
+    --margin-xs: 5px;
+    --margin-sm: 10px;
+    --margin-md: 20px;
+    --margin-lg: 40px;
+    --margin-xl: 60px;
+    
+    --border-xs: 1px;
+    --border-sm: 2px;
+    --border-md: 3px;
+    --border-lg: 4px;
+    --border-xl: 5px;
+    
+    --border-radius-xs: 2px;
+    --border-radius-sm: 4px;
+    --border-radius-md: 6px;
+    --border-radius-lg: 8px;
+    --border-radius-xl: 10px;
+    
+    --padding-xs: 5px;
+    --padding-sm: 10px;
+    --padding-md: 20px;
+    --padding-lg: 40px;
+    --padding-xl: 60px;
+    
+    --outline-xs: 1px;
+    --outline-sm: 2px;
+    --outline-md: 3px;
+    --outline-lg: 4px;
+    --outline-xl: 5px;
+    
+    --outline-offset-xs: 1px;
+    --outline-offset-sm: 2px;
+    --outline-offset-md: 3px;
+    --outline-offset-lg: 4px;
+    --outline-offset-xl: 5px;
 
+    --box-shadow-xs:   2px;
+    --box-shadow-sm:   4px;
+    --box-shadow-md:   6px;
+    --box-shadow-lg:   8px;
+    --box-shadow-xl:   10px;
+    --box-shadow-blur: 2px;
+    
+    --gap-xs: 5px;
+    --gap-sm: 10px;
+    --gap-md: 15px;
+    --gap-lg: 20px;
+    --gap-xl: 25px;
+    
     --font-size-xs: 12px;
     --font-size-sm: 16px;
     --font-size-md: 24px;
     --font-size-lg: 32px;
     --font-size-xl: 52px;
 
-    --margin-xs: calc(var(--margin-size) * var(--mul-xs));
-    --margin-sm: calc(var(--margin-size) * var(--mul-sm));
-    --margin-md: calc(var(--margin-size) * var(--mul-md));
-    --margin-lg: calc(var(--margin-size) * var(--mul-lg));
-    --margin-xl: calc(var(--margin-size) * var(--mul-xl));
+    --letter-spacing-xs: 5px;
+    --letter-spacing-sm: 10px;
+    --letter-spacing-md: 15px;
+    --letter-spacing-lg: 20px;
+    --letter-spacing-xl: 25px;
     
-    --border-xs: calc(var(--border-size) * var(--mul-xs));
-    --border-sm: calc(var(--border-size) * var(--mul-sm));
-    --border-md: calc(var(--border-size) * var(--mul-md));
-    --border-lg: calc(var(--border-size) * var(--mul-lg));
-    --border-xl: calc(var(--border-size) * var(--mul-xl));
-    
-    --border-radius-xs: calc(var(--border-radius-size) * var(--mul-xs));
-    --border-radius-sm: calc(var(--border-radius-size) * var(--mul-sm));
-    --border-radius-md: calc(var(--border-radius-size) * var(--mul-md));
-    --border-radius-lg: calc(var(--border-radius-size) * var(--mul-lg));
-    --border-radius-xl: calc(var(--border-radius-size) * var(--mul-xl));
-    
-    --padding-xs: calc(var(--padding-size) * var(--mul-xs));
-    --padding-sm: calc(var(--padding-size) * var(--mul-sm));
-    --padding-md: calc(var(--padding-size) * var(--mul-md));
-    --padding-lg: calc(var(--padding-size) * var(--mul-lg));
-    --padding-xl: calc(var(--padding-size) * var(--mul-xl));
-    
-    --outline-xs: calc(var(--outline-size) * var(--mul-xs));
-    --outline-sm: calc(var(--outline-size) * var(--mul-sm));
-    --outline-md: calc(var(--outline-size) * var(--mul-md));
-    --outline-lg: calc(var(--outline-size) * var(--mul-lg));
-    --outline-xl: calc(var(--outline-size) * var(--mul-xl));
-    
-    --outline-offset-xs: calc(var(--outline-offset) * var(--mul-xs));
-    --outline-offset-sm: calc(var(--outline-offset) * var(--mul-sm));
-    --outline-offset-md: calc(var(--outline-offset) * var(--mul-md));
-    --outline-offset-lg: calc(var(--outline-offset) * var(--mul-lg));
-    --outline-offset-xl: calc(var(--outline-offset) * var(--mul-xl));
+    --word-spacing-xs: 5px;
+    --word-spacing-sm: 10px;
+    --word-spacing-md: 15px;
+    --word-spacing-lg: 20px;
+    --word-spacing-xl: 25px;
 
-    --box-shadow-xs: calc(var(--box-shadow-size) * var(--mul-xs));
-    --box-shadow-sm: calc(var(--box-shadow-size) * var(--mul-sm));
-    --box-shadow-md: calc(var(--box-shadow-size) * var(--mul-md));
-    --box-shadow-lg: calc(var(--box-shadow-size) * var(--mul-lg));
-    --box-shadow-xl: calc(var(--box-shadow-size) * var(--mul-xl));
-    
-    --gap-xs: calc(var(--gap-size) * var(--mul-xs));
-    --gap-sm: calc(var(--gap-size) * var(--mul-sm));
-    --gap-md: calc(var(--gap-size) * var(--mul-md));
-    --gap-lg: calc(var(--gap-size) * var(--mul-lg));
-    --gap-xl: calc(var(--gap-size) * var(--mul-xl));
-    
-    --letter-spacing-xs: calc(var(--letter-spacing-size) * var(--mul-xs));
-    --letter-spacing-sm: calc(var(--letter-spacing-size) * var(--mul-sm));
-    --letter-spacing-md: calc(var(--letter-spacing-size) * var(--mul-md));
-    --letter-spacing-lg: calc(var(--letter-spacing-size) * var(--mul-lg));
-    --letter-spacing-xl: calc(var(--letter-spacing-size) * var(--mul-xl));
-    
-    --word-spacing-xs: calc(var(--word-spacing-size) * var(--mul-xs));
-    --word-spacing-sm: calc(var(--word-spacing-size) * var(--mul-sm));
-    --word-spacing-md: calc(var(--word-spacing-size) * var(--mul-md));
-    --word-spacing-lg: calc(var(--word-spacing-size) * var(--mul-lg));
-    --word-spacing-xl: calc(var(--word-spacing-size) * var(--mul-xl));
-
-    --text-shadow-xs: calc(var(--text-shadow-size) * var(--mul-xs));
-    --text-shadow-sm: calc(var(--text-shadow-size) * var(--mul-sm));
-    --text-shadow-md: calc(var(--text-shadow-size) * var(--mul-md));
-    --text-shadow-lg: calc(var(--text-shadow-size) * var(--mul-lg));
-    --text-shadow-xl: calc(var(--text-shadow-size) * var(--mul-xl));
+    --text-shadow-xs:   0.5px;
+    --text-shadow-sm:   1px;
+    --text-shadow-md:   1.5px;
+    --text-shadow-lg:   2px;
+    --text-shadow-xl:   2.5px;
+    --text-shadow-blur: 2px;
 
     --black:   #000000;
     --blue:    #0000ff;
@@ -116,4 +99,20 @@
     --light-grey:   #bfbfbf;
     --light-purple: #7f00ff;
     --light-yellow: #ffff7f;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --margin-xs: 10px;
+        --margin-sm: 20px;
+        --margin-md: 50px;
+        --margin-lg: 80px;
+        --margin-xl: 120px;
+
+        --padding-xs: 5px;
+        --padding-sm: 10px;
+        --padding-md: 20px;
+        --padding-lg: 50px;
+        --padding-xl: 100px;
+    }
 }

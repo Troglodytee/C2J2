@@ -1,15 +1,17 @@
 ========== CSS Companion & Judicious Javascript (C2J2) ==========
 Author  : Thomas Baricault
-Version : 1.8.2
+Version : 1.8.3
 =================================================================
 
 Include :
 • CSS :
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.8.2/css/include.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.8.3/css/include.css">
 • JS :
-	<script type="module" src="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.8.2/js/include.js"></script>
+	<script type="module" src="https://cdn.jsdelivr.net/gh/troglodytee/c2j2@1.8.3/js/include.js"></script>
 
 Release note :
+• 1.8.3 (20/02/2023)
+	- Patching CSS
 • 1.8.2 (03/02/2023)
 	- Patching popup
 	- Patching animations

@@ -7,6 +7,17 @@ import * as Popup from "./popup.js";
 import * as ToolTip from "./tool-tip.js";
 import * as Tree from "./tree.js";
 
+export {
+    Carousel,
+    Code,
+    DropMenu,
+    Graph,
+    Repeat,
+    Popup,
+    ToolTip,
+    Tree,
+};
+
 for (let i of document.getElementsByClassName("c2j2-init")) {
     Repeat.init(i);
     Carousel.init(i);
