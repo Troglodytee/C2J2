@@ -4,31 +4,31 @@
     --margin-md: 20px;
     --margin-lg: 40px;
     --margin-xl: 60px;
-    
+
     --border-xs: 1px;
     --border-sm: 2px;
     --border-md: 3px;
     --border-lg: 4px;
     --border-xl: 5px;
-    
+
     --border-radius-xs: 2px;
     --border-radius-sm: 4px;
     --border-radius-md: 6px;
     --border-radius-lg: 8px;
     --border-radius-xl: 10px;
-    
+
     --padding-xs: 5px;
     --padding-sm: 10px;
     --padding-md: 20px;
     --padding-lg: 40px;
     --padding-xl: 60px;
-    
+
     --outline-xs: 1px;
     --outline-sm: 2px;
     --outline-md: 3px;
     --outline-lg: 4px;
     --outline-xl: 5px;
-    
+
     --outline-offset-xs: 1px;
     --outline-offset-sm: 2px;
     --outline-offset-md: 3px;
@@ -41,13 +41,19 @@
     --box-shadow-lg:   8px;
     --box-shadow-xl:   10px;
     --box-shadow-blur: 2px;
-    
+
     --gap-xs: 5px;
     --gap-sm: 10px;
     --gap-md: 15px;
     --gap-lg: 20px;
     --gap-xl: 25px;
-    
+
+    --table-gap-xs: 5px;
+    --table-gap-sm: 10px;
+    --table-gap-md: 15px;
+    --table-gap-lg: 20px;
+    --table-gap-xl: 25px;
+
     --font-size-xs: 12px;
     --font-size-sm: 16px;
     --font-size-md: 24px;
@@ -59,7 +65,7 @@
     --letter-spacing-md: 15px;
     --letter-spacing-lg: 20px;
     --letter-spacing-xl: 25px;
-    
+
     --word-spacing-xs: 5px;
     --word-spacing-sm: 10px;
     --word-spacing-md: 15px;
