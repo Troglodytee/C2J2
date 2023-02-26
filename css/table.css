@@ -8,8 +8,8 @@
 .bd-separate {border-collapse: separate;}
 
 .bd-spacing-none {border-spacing: 0;}
-.bd-spacing-xs   {border-spacing: var(--padding-xs);}
-.bd-spacing-sm   {border-spacing: var(--padding-sm);}
-.bd-spacing-md   {border-spacing: var(--padding-md);}
-.bd-spacing-lg   {border-spacing: var(--padding-lg);}
-.bd-spacing-xl   {border-spacing: var(--padding-xl);}
+.bd-spacing-xs   {border-spacing: var(--table-gap-xs);}
+.bd-spacing-sm   {border-spacing: var(--table-gap-sm);}
+.bd-spacing-md   {border-spacing: var(--table-gap-md);}
+.bd-spacing-lg   {border-spacing: var(--table-gap-lg);}
+.bd-spacing-xl   {border-spacing: var(--table-gap-xl);}
