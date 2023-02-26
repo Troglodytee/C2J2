@@ -26,14 +26,14 @@ export function compute(element) {
     let existing_language = language && LANGUAGES.includes(language);
     if (existing_language) {
         if (!(element.dataset.hideHead === "true")) {
-            html += `<div class="bd-rad-t-md pd-md d-flex gap-sm algn-i-center bg-light-grey"><img src="${C2J2_PATH}/img/${ICONS[language][0]}.svg" alt="${ICONS[language][1]}" style="max-width: 40px; max-height: 40px;">`;
+            html += `<div class="bd-rad-t-md pd-sm d-flex gap-sm algn-i-center bg-light-grey"><img src="${C2J2_PATH}/img/${ICONS[language][0]}.svg" alt="${ICONS[language][1]}" style="max-width: 40px; max-height: 40px;">`;
             if (element.dataset.name) {html += `<p class="fs-sm txt-black">${element.dataset.name}</p>`;}
             html += "</div>"
         }
     }
     let bd = "bd-rad-b-md";
     if (!existing_language || element.dataset.hideHead == "true") {bd = "bd-rad-md";}
-    html += `<div class="${bd} pd-md bg-dark-grey txt-w-break-breakall">`;
+    html += `<div class="${bd} pd-sm bg-dark-grey txt-w-break-breakall">`;
     if (element.id && element.dataset.allowCopy === "true") {
         html += `
             <img id="${element.id}-copy" class="float-right mg-l-xs" src="${C2J2_PATH}/img/copy-to-clipboard.svg" alt="Copier" style="max-width: 40px; max-height: 40px;">
@@ -61,7 +61,7 @@ export function compute(element) {
                     }
                 }
                 else if (i == " ") {
-                    color = "white";
+                    if (color == "") {color = "white";}
                     if (type == "tag") {type = "var";}
                 }
                 else if (i == "=") {
@@ -75,7 +75,7 @@ export function compute(element) {
                 }
                 else if ("<>/!-".includes(i)) {
                     if (type == "val") {color = "orange";}
-                    else {
+                    else if (!("/!-".includes(i) && type != "spe")) {
                         color = "grey";
                         if (type == "tag") {type = "out";}
                         else {type = "spe";}
